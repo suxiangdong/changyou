@@ -1,0 +1,33 @@
+{
+  "alert": {
+    "receiver": "feishu_robot",
+    "enabled": true,
+    "extra": "畅游-西游",
+    "out_cfg": {
+      "feishu_robot_hook": "https://open.feishu.cn/open-apis/bot/v2/hook/20d5fd5c-2178-42ec-b4bd-5c95f50ddef5"
+    }
+  },
+  "datasource": [
+    {
+      "type": "kafka",
+      "topic": "M1643093398001_heart,M1643093398001_login,M1643093398001_rolebuild,M1643093398001_rolelogin,M1643093398001_rtpmatching,M1643093398001_newstages,M1643093398001_levelup,M1643093398001_pvefight,M1643093398001_pvpfight,M1643093398001_playanddownload,M1643093398001_logout,M1643093398001_erlangattackedcount",
+      "consumer_group": "sskj_xiyou_ta_test_event5",
+      "auto_commit": false,
+      "brokers": [
+        "10.156.0.118:9092"
+      ],
+      "block_partitions_timeout": 4000,
+      "block_partitions_revoked": true,
+      "app_id": "97222d480deb4e86862c15891f7e6197",
+      "parser": {
+        "cmd": "./xiyou",
+        "hand_shake": {
+          "protocol_version": 1,
+          "magic_cookie_key": "LogBus",
+          "magic_cookie_value": "v2"
+        }
+      }
+    }
+  ],
+  "push_url": "http://10.156.0.92:8991"
+}

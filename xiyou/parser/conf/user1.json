@@ -1,0 +1,1191 @@
+{
+  "mapping": {
+    "roleid": "#account_id",
+    "deviceid": "#distinct_id",
+    "servertime": "#time",
+    "modelname": "#event_name",
+    "ip": "#ip"
+  },
+  "templates": {
+    "M1655274499097_activationcode": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001codeid\u0001itemid\u0001platform\u0001timey\u0001nimingid\u0001rolename\u0001jielevel\u0001money100\u0001yfrzbbh\u0001timex"
+    },
+    "M1655274499097_activity": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001activityid\u0001subid\u0001activitype\u0001location\u0001result\u0001amount\u0001timey\u0001nimingid\u0001rolename\u0001jielevel\u0001money100\u0001yfrzbbh\u0001timex\u0001voucher\u0001orderid\u0001beiyong1\u0001beiyong2\u0001beiyong3",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "rolelevel",
+        "activitype": "activitype",
+        "location": "location",
+        "result": "result",
+        "amount": "amount",
+        "money100": "money100",
+        "voucher": "voucher"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "activitype": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "result": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "amount": {
+          "idx": 9999,
+          "type": "float"
+        },
+        "money100": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "voucher": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_backpacksnap": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001itemtype\u0001itemid\u0001orderid\u0001level\u0001rank\u0001itemam\u0001timey\u0001yfrzbbh\u0001nmid\u0001color"
+    },
+    "M1655274499097_chatsystem": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001chattype\u0001targetroleid\u0001message\u0001operatetype\u0001timey\u0001nimingid\u0001rolename\u0001jielevel\u0001money100\u0001yfrzbbh\u0001timex"
+    },
+    "M1655274499097_click": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001clicktype\u0001juchangid\u0001clicknum\u0001timey\u0001yfrzbbh\u0001nmid\u0001dtcartoonid\u0001tjzrclick\u0001zixunclick"
+    },
+    "M1655274499097_diary": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001npcname\u0001npcstage\u0001npceventid\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_equipmentchange": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001heroid\u0001orderid\u0001itemid1\u0001orderid1\u0001itemid2\u0001orderid2\u0001itemid3\u0001orderid3\u0001itemid4\u0001orderid4\u0001itemid5\u0001orderid5\u0001itemid6\u0001orderid6\u0001heropower\u0001timey\u0001yfrzbbh\u0001nmid\u0001item1level\u0001item2level\u0001item3level\u0001item4level\u0001item5level\u0001item6level\u0001item1color\u0001item2color\u0001item3color\u0001item4color"
+    },
+    "M1655274499097_formation": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001operatetype\u0001teamname\u0001heroid1\u0001heroid2\u0001heroid3\u0001heroid4\u0001heroid5\u0001teamam\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_friendmanagement": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001operatetype\u0001operationroleid\u0001friendam\u0001timey\u0001nimingid\u0001rolename\u0001jielevel\u0001money100\u0001actiondesc\u0001yfrzbbh\u0001timex         "
+    },
+    "M1655274499097_gethero": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001heroid\u0001orderid\u0001causeid\u0001heronum\u0001heronum1\u0001subcauseid\u0001subcauseid2\u0001operatetype\u0001quantity\u0001total\u0001platform\u0001timey\u0001yfrzbbh\u0001nmid\u0001herotype",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "rolelevel",
+        "heronum": "heronum",
+        "heronum1": "heronum1",
+        "subcauseid": "subcauseid",
+        "subcauseid2": "subcauseid2",
+        "operatetype": "operatetype",
+        "quantity": "quantity",
+        "total": "total",
+        "platform": "platform",
+        "herotype": "herotype"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "heronum": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "heronum1": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "subcauseid": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "subcauseid2": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "operatetype": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "quantity": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "total": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "platform": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "herotype": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_guildmanagement": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001operatetype\u0001operatetype2\u0001guildid\u0001guildname\u0001guildpower\u0001guildrolejob\u0001content\u0001guildam\u0001timey\u0001yfrzbbh\u0001nmid\u0001guilfee\u0001targetroleid"
+    },
+    "M1655274499097_guildsnap": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001guildrolejob\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_heart": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001onlineuser\u0001paidui\u0001timey\u0001yfrzbbh"
+    },
+    "M1655274499097_heroraise": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001heroid\u0001orderid\u0001stageid\u0001result\u0001param1\u0001param2\u0001param3\u0001operatetype\u0001levelam\u0001level\u0001rank\u0001heropower\u0001power\u0001platform\u0001timey\u0001yfrzbbh\u0001nmid\u0001xhid1\u0001xhrank1\u0001xhid2\u0001xhrank2\u0001herotype",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "rolelevel",
+        "param1": "param1",
+        "operatetype": "operatetype",
+        "levelam": "levelam",
+        "level": "level",
+        "rank": "rank",
+        "heropower": "heropower",
+        "power": "power",
+        "platform": "platform",
+        "xhrank1": "xhrank1",
+        "xhrank2": "xhrank2",
+        "xhrank3": "xhrank3"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "param1": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "operatetype": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "levelam": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "level": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "rank": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "heropower": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "power": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "xhrank1": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "xhrank2": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "xhrank3": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "platform": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_heroregroup": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001operatetype\u0001orderid\u0001heroid\u0001power\u0001timey\u0001yfrzbbh\u0001nmid\u0001herotype"
+    },
+    "M1655274499097_herosnap": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001heroid\u0001orderid\u0001itemid1\u0001orderid1\u0001itemid2\u0001orderid2\u0001itemid3\u0001orderid3\u0001itemid4\u0001orderid4\u0001itemid5\u0001orderid5\u0001itemid6\u0001orderid6\u0001heropower\u0001timey\u0001yfrzbbh\u0001nmid\u0001item1level\u0001item2level\u0001item3level\u0001item4level\u0001item5level\u0001item6level\u0001item1color\u0001item2color\u0001item3color\u0001item4color"
+    },
+    "M1655274499097_herowishlist": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001positioncolorid\u0001positionid\u0001heroidbf\u0001heroid\u0001heronum\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_item": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001itemtypeid\u0001itemid\u0001causeid\u0001quantity\u0001vip\u0001subcauseid\u0001action\u0001total\u0001orderid\u0001platform\u0001timey\u0001nimingid\u0001rolename\u0001jielevel\u0001money100\u0001itemtype\u0001itemname\u0001causedesc\u0001yfrzbbh\u0001timex",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "rolelevel",
+        "itemtypeid": "itemtypeid",
+        "quantity": "quantity",
+        "action": "action",
+        "total": "total",
+        "platform": "platform",
+        "money100": "money100"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "itemtypeid": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "quantity": {
+          "idx": 9999,
+          "type": "float"
+        },
+        "action": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "total": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "platform": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "money100": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_levelup": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001rolename\u0001rolelevelaf\u0001rolelevelbf\u0001time\u0001taskid\u0001platform\u0001timey\u0001nimingid\u0001jielevel\u0001money100\u0001yfrzbbh",
+      "filter": {
+        "rolelevel": 0
+      },
+      "type": "user_set",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "level_user"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_limitpack": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001beforereward id\u0001afterreward id\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_login": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001rolename\u0001ip\u0001valueamount\u0001timey\u0001yfrzbbh\u0001nmid\u0001dlfs",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "rolelevel",
+        "valueamount": "valueamount"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "valueamount": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_login_wxxcx": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001grade\u0001deviceid\u0001rolename\u0001ip\u0001valueamount\u0001clue_path"
+    },
+    "M1655274499097_logout": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001rolename\u0001valueamount\u0001onlinetimes\u0001vip\u0001energy\u0001heronum\u0001heronum1\u0001power\u0001gold\u0001stageid\u0001racclevel\u0001logouttype\u0001platform\u0001timey\u0001nimingid\u0001zuanshitang\u0001best5\u0001money100\u0001jsljzxsc\u0001yfrzbbh\u0001zhlx\u0001ccje"
+    },
+    "M1655274499097_mailbox": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001mailed\u0001maliname\u0001mailtype\u0001mailcaozuo\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_manoeuvre": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001chapterid\u0001levelid\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_money": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001causeid\u0001quantity\u0001total\u0001typeid\u0001vip\u0001subcauseid\u0001action\u0001platform\u0001timey\u0001nimingid\u0001rolename\u0001jielevel\u0001money100\u0001moneytype\u0001causedesc\u0001yfrzbbh\u0001timex",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "rolelevel",
+        "quantity": "quantity",
+        "total": "total",
+        "action": "action",
+        "platform": "platform",
+        "money100": "money100"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "quantity": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "total": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "action": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "money100": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "platform": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_msls": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001operatetype\u0001rolefloors\u0001rolefloorcustoms\u0001timey\u0001yfrzbbh\u0001nmid\u0001moxingtype\u0001diff",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "rolelevel",
+        "operatetype": "operatetype",
+        "rolefloorcustoms": "rolefloorcustoms",
+        "moxingtype": "moxingtype",
+        "diff": "diff"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "operatetype": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "rolefloorcustoms": {
+          "idx": 9999,
+          "type": "float"
+        },
+        "moxingtype": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "diff": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_newstages": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001eventid\u0001subeventid\u0001nextsubeventid\u0001nexteventid\u0001result\u0001time\u0001yfrzbbh\u0001timey",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "rolelevel",
+        "result": "result",
+        "time": "time"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "result": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "time": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_npctask": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001npcid\u0001operatetype\u0001tasktype\u0001result\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_onhook": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001operatetype\u0001onhooktime\u0001fastonhookresidue\u0001fastonhookam\u0001timey\u0001yfrzbbh\u0001nmid",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "rolelevel",
+        "operatetype": "operatetype",
+        "onhooktime": "onhooktime",
+        "fastonhookresidue": "fastonhookresidue",
+        "fastonhookam": "fastonhookam"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "operatetype": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "onhooktime": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "fastonhookresidue": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "fastonhookam": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_packgifttrig": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001packid\u0001packgroupid\u0001endtime\u0001operatetype\u0001leichong\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_powerkz": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001powersum\u0001powerhz\u0001powerzs\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_pvefight": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001stageid\u0001type\u0001npcid\u0001result\u0001mapid\u0001star\u0001stagetype\u0001time\u0001energy\u0001power1\u0001suggestpower\u0001heroid1\u0001heroid2\u0001heroid3\u0001heroid4\u0001heroid5\u0001heroid6\u0001platform\u0001power\u0001num\u0001story\u0001timey\u0001nimingid\u0001rolename\u0001jielevel\u0001money100\u0001heroinfo\u0001yfrzbbh\u0001timex",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "heroinfo": "pvefight_detail",
+        "rolelevel": "rolelevel",
+        "result": "result",
+        "time": "time",
+        "energy": "energy",
+        "power1": "power1",
+        "suggestpower": "suggestpower",
+        "platform": "platform",
+        "power": "power",
+        "num": "num",
+        "story": "story",
+        "money100": "money100"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "result": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "time": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "energy": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "power1": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "suggestpower": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "platform": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "power": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "num": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "story": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "money100": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "heroinfo": {
+          "idx": 9999,
+          "params": {
+            "special": {
+              "-1": {
+                "heroid": 0
+              }
+            },
+            "keys": [
+              {"name": "orderid"},
+              {"name": "heroid"},
+              {"name": "rank", "type":"int"},
+              {"name": "hero_power", "type": "int"}
+            ],
+            "fn": "string2objectarray"
+          }
+        }
+      }
+    },
+    "M1655274499097_pvpfight": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001power\u0001rankbf\u0001rankaf\u0001battleid\u0001targetroleid\u0001targetname\u0001targetlevel\u0001targetpower\u0001targetrankbf\u0001targetrankaf\u0001result\u0001time\u0001rankscore\u0001scorebf\u0001score\u0001targetscorebf\u0001targetscore\u0001platform\u0001timey\u0001nimingid\u0001rolename\u0001jielevel\u0001money100\u0001heroinfo\u0001targetinfo\u0001yfrzbbh\u0001timex\u0001battletype\u0001lszlscore",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "heroinfo": "own_group_detail",
+        "targetinfo": "rival_group_detail",
+        "rolelevel": "rolelevel",
+        "power": "power",
+        "rankaf": "rankaf",
+        "targetlevel": "targetlevel",
+        "targetpower": "targetpower",
+        "targetrankbf": "targetrankbf",
+        "targetrankaf": "targetrankaf",
+        "result": "result",
+        "time": "time",
+        "rankscore": "rankscore",
+        "scorebf": "scorebf",
+        "score": "score",
+        "targetscorebf": "targetscorebf",
+        "targetscore": "targetscore",
+        "platform": "platform",
+        "money100": "money100",
+        "battletype": "battletype",
+        "rankbf": "rankbf"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "power": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "rankaf": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "targetlevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "targetpower": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "targetrankbf": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "targetrankaf": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "result": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "time": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "rankscore": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "scorebf": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "score": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "targetscorebf": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "targetscore": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "platform": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "money100": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "battletype": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "rankbf": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "heroinfo": {
+          "idx": 9999,
+          "params": {
+            "special": {
+              "-1": {
+                "heroid": 0
+              }
+            },
+            "keys": [
+              {"name": "orderid"},
+              {"name": "heroid"},
+              {"name": "rank", "type": "int"},
+              {"name": "hero_power", "type": "int"}
+            ],
+            "fn": "string2objectarray"
+          }
+        },
+        "targetinfo": {
+          "idx": 9999,
+          "params": {
+            "special": {
+              "-1": {
+                "heroid": 0
+              }
+            },
+            "keys": [
+              {"name": "orderid"},
+              {"name": "heroid"},
+              {"name": "rank", "type": "int"},
+              {"name": "hero_power", "type": "int"}
+            ],
+            "fn": "string2objectarray"
+          }
+        }
+      }
+    },
+    "M1655274499097_pvprankkz": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001pvpranktype\u0001pvprankid\u0001pvpranknum\u0001pvprankzhi\u0001timey\u0001yfrzbbh\u0001nmid\u0001"
+    },
+    "M1655274499097_racclevel": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001levelam\u0001levelaf\u0001timey\u0001yfrzbbh\u0001nmid",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "rolelevel",
+        "levelam": "levelam",
+        "levelaf": "levelaf"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "levelam": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "levelaf": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_rankkz": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001ranktype\u0001ranknum\u0001rankzhi\u0001timey\u0001yfrzbbh\u0001nmid\u0001"
+    },
+    "M1655274499097_recharge": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001amount\u0001rechargechannel\u0001valuequantity\u0001vip\u0001currency\u0001ip\u0001valueamount\u0001goods_id\u0001orderid\u0001platform\u0001power\u0001timey\u0001nimingid\u0001rolename\u0001jielevel\u0001money100\u0001orderid2\u0001goodid2\u0001goodid3\u0001price100\u0001orderid3\u0001firstbuy\u0001activityid\u0001yfrzbbh\u0001timex",
+      "filter": {
+        "servertime": 0
+      },
+      "repeat": {
+        "servertime": "first_pay_time"
+      },
+      "type": "user_setOnce",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip"
+      }
+    },
+    "M1655274499097_rent": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001rentopreate\u0001renthero\u0001rentherozl\u0001rentheropz\u0001rentherozs\u0001rentherosqid\u0001rentherosq\u0001rentherocore\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_resonancecrystal": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001operatetype\u0001crystallevel\u0001positionid\u0001heroid\u0001orderid\u0001herolevelbf\u0001herolevelaf\u0001power\u0001rolepositionam\u0001heronum\u0001timey\u0001yfrzbbh\u0001nmid\u0001level\u0001quality"
+    },
+    "M1655274499097_rewardba": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001operatetype\u0001taskid\u0001dispatchtype\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_rolebuild": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001rolename\u0001gender\u0001platform\u0001timey\u0001nimingid\u0001ip\u0001typeid\u0001idtype\u0001system\u0001systemver\u0001device\u0001brand\u0001resolution\u0001network\u0001olduser\u0001yfrzbbh",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "rolelevel",
+        "gender": "gender",
+        "platform": "platform"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "gender": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "platform": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_roleinfochanage": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001operatetype\u0001contentbf\u0001content\u0001timey\u0001yfrzbbh\u0001nmid\u0001contenttx"
+    },
+    "M1655274499097_rolelogin": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001rolename\u0001valueamount\u0001logintype\u0001platform\u0001timey\u0001jielevel\u0001money100\u0001system\u0001systemver\u0001device\u0001brand\u0001resolution\u0001ip\u0001network\u0001yfrzbbh\u0001nmid\u0001checkversion\u0001cheat",
+      "type": "user_setOnce",
+      "filter": {
+        "servertime": 0
+      },
+      "repeat": {
+        "servertime": "first_login_time"
+      },
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip"
+      }
+    },
+    "M1655274499097_roomdecoration": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001jiajutype\u0001jiajuid\u0001comfort\u0001comfortsum\u0001timey\u0001yfrzbbh\u0001nmid    "
+    },
+    "M1655274499097_roomvisit": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001clueget\u0001clueid\u0001cluetotal\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_serverevent": {
+      "template": "servertime\u0001appkey\u0001sdkversion\u0001system\u0001gamechannel\u0001deviceid\u0001userid\u0001code\u0001version\u0001timey\u0001nmid\u0001rzmkm\u0001yfrzbbh"
+    },
+    "M1655274499097_share": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001shareaction\u0001sharefrom\u0001sharetype\u0001shareresult\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_shcollect": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001shtype\u0001shheroid\u0001shherotype\u0001shfirstshan\u0001cardnum\u0001shannum\u0001shfengmian1\u0001shfengmian2\u0001shfengmian3\u0001shtiehua\u0001shback\u0001shsharetype\u0001shlhc\u0001shlhclevel\u0001lhcnum\u0001timey\u0001yfrzbbh\u0001nmid\u0001shgsk\u0001shgsknum"
+    },
+    "M1655274499097_shcollectsnap": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001shfengmian1\u0001shfengmian2\u0001shfengmian3\u0001shtiehua\u0001shback\u0001cardnum\u0001shannum\u0001lhcnum\u0001timey\u0001yfrzbbh\u0001nmid\u0001shgsknum"
+    },
+    "M1655274499097_shoptrade": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001itemtypeid\u0001itemid\u0001itemcount\u0001moneytypeid\u0001moneycount\u0001shopid\u0001vip\u0001platform\u0001timey\u0001nimingid\u0001rolename\u0001jielevel\u0001money100\u0001shopdesc\u0001moneytype\u0001itemname\u0001yfrzbbh\u0001timex",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "moneytypeid": "typeid",
+        "rolelevel": "rolelevel",
+        "itemtypeid": "itemtypeid",
+        "itemcount": "itemcount",
+        "moneycount": "moneycount",
+        "platform": "platform",
+        "money100": "money100"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "itemtypeid": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "itemcount": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "moneycount": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "money100": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "platform": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_strengthenequipment": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001equipmentid\u0001equipmentorderid\u0001operatetype\u0001enhancestaram\u0001level\u0001rank\u0001power\u0001timey\u0001yfrzbbh\u0001nmid\u0001czqhuase\u0001czselect\u0001czhhuase",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "rolelevel",
+        "operatetype": "operatetype",
+        "enhancestaram": "enhancestaram",
+        "level": "level",
+        "rank": "rank",
+        "power": "power",
+        "czqhuase": "czqhuase",
+        "czselect": "czselect",
+        "czhhuase": "czhhuase"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "operatetype": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "enhancestaram": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "level": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "rank": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "power": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "czqhuase": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "czselect": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "czhhuase": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_task": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001taskid\u0001result\u0001tasktype\u0001power\u0001subtaskid\u0001subresult\u0001platform\u0001timey\u0001nimingid\u0001rolename\u0001jielevel\u0001money100\u0001taskdesc\u0001yfrzbbh\u0001timex\u0001yindaotask\u0001banfei\u0001leijibanfei",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "rolelevel",
+        "tasktype": "tasktype",
+        "power": "power",
+        "platform": "platform",
+        "money100": "money100",
+        "yindaotask": "yindaotask",
+        "banfei": "banfei",
+        "leijibanfei": "leijibanfei"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "tasktype": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "power": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "platform": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "money100": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "yindaotask": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "banfei": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "leijibanfei": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_tblrefine": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001heroid\u0001orderid\u0001operatetype\u0001tblstage\u0001awakeskillbf\u0001awakeskill\u0001save\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_tblstrengthen": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001heroid\u0001orderid\u0001tblstage\u0001tbllevel\u0001timey\u0001yfrzbbh\u0001nmid",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "rolelevel": "rolelevel",
+        "tblstage": "tblstage",
+        "tbllevel": "tbllevel"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "tblstage": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "tbllevel": {
+          "idx": 9999,
+          "type": "int"
+        }
+      }
+    },
+    "M1655274499097_teamchip": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001copytype\u0001copyid\u0001copylevel\u0001roomtype\u0001roomid\u0001roomuserid\u0001result\u0001residuedegree\u0001degreeam\u0001timey\u0001nimingid\u0001rolename\u0001jielevel\u0001money100\u0001heroinfo\u0001teammateid1\u0001teammatehero1\u0001teammateid2\u0001teammatefero2\u0001yfrzbbh\u0001timex\u0001banjigeren\u0001banjisum",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "heroinfo": "own_group_detail",
+        "teammatehero1": "member1_group_detail",
+        "teammatehero2": "member2_group_detail",
+        "rolelevel": "rolelevel",
+        "copytype": "copytype",
+        "copylevel": "copylevel",
+        "roomtype": "roomtype",
+        "residuedegree": "residuedegree",
+        "degreeam": "degreeam",
+        "money100": "money100",
+        "banjigeren": "banjigeren",
+        "banjisum": "banjisum"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "copytype": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "copylevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "roomtype": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "residuedegree": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "degreeam": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "money100": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "banjigeren": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "banjisum": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "heroinfo": {
+          "idx": 9999,
+          "params": {
+            "special": {
+              "-1": {
+                "heroid": 0
+              }
+            },
+            "keys": [
+              {"name": "orderid"},
+              {"name": "heroid"},
+              {"name": "rank", "type": "int"},
+              {"name": "hero_power", "type": "int"}
+            ],
+            "fn": "string2objectarray"
+          }
+        },
+        "teammatehero1": {
+          "idx": 9999,
+          "params": {
+            "special": {
+              "-1": {
+                "heroid": 0
+              }
+            },
+            "keys": [
+              {"name": "orderid"},
+              {"name": "heroid"},
+              {"name": "rank", "type": "int"},
+              {"name": "hero_power", "type": "int"}
+            ],
+            "fn": "string2objectarray"
+          }
+        },
+        "teammatehero2": {
+          "idx": 9999,
+          "params": {
+            "special": {
+              "-1": {
+                "heroid": 0
+              }
+            },
+            "keys": [
+              {"name": "orderid"},
+              {"name": "heroid"},
+              {"name": "rank", "type": "int"},
+              {"name": "hero_power", "type": "int"}
+            ],
+            "fn": "string2objectarray"
+          }
+        }
+      }
+    },
+    "M1655274499097_teamhunting": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001boss\u0001bossid\u0001operatetype\u0001damage\u0001nimingid\u0001rolename\u0001money100\u0001heroinfo\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_viptree": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001treefloor\u0001treetype\u0001treeid\u0001treelevel\u0001quantity\u0001total\u0001treenum\u0001maxtreefloor\u0001timey\u0001yfrzbbh\u0001nmid"
+    },
+    "M1655274499097_watermarginstrike": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001operatetype\u0001towerid\u0001floors\u0001result\u0001timey\u0001nimingid\u0001rolename\u0001jielevel\u0001money100\u0001heroinfo\u0001battletime\u0001yfrzbbh\u0001timex\u0001towerauto",
+      "mapping": {
+        "roleid": "#account_id",
+        "deviceid": "#distinct_id",
+        "servertime": "#time",
+        "modelname": "#event_name",
+        "ip": "#ip",
+        "heroinfo": "pvefight_detail",
+        "rolelevel": "rolelevel",
+        "operatetype": "operatetype",
+        "floors": "floors",
+        "money100": "money100",
+        "battletime": "battletime",
+        "towerauto": "towerauto"
+      },
+      "fields": {
+        "rolelevel": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "operatetype": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "floors": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "money100": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "battletime": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "towerauto": {
+          "idx": 9999,
+          "type": "int"
+        },
+        "heroinfo": {
+          "idx": 9999,
+          "params": {
+            "keys": [
+              {"name": "orderid"},
+              {"name": "heroid"},
+              {"name": "rank", "type": "int"},
+              {"name": "hero_power", "type": "int"}
+            ],
+            "fn": "string2objectarray"
+          }
+        }
+      }
+    },
+    "M1655274499097_zsgcollect": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001itemid\u0001itemcause\u0001timey\u0001yfrzbbh\u0001nmid"
+    }
+  }
+}

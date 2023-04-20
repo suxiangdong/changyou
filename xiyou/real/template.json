@@ -1,0 +1,1016 @@
+{
+  "mapping": {
+    "roleid": "#account_id",
+    "deviceid": "#distinct_id",
+    "servertime": "#time",
+    "modelname": "#event_name",
+    "ip": "#ip"
+  },
+  "properties": {
+    "#zone_offset": "8"
+  },
+  "templates": {
+    "M1643093398001_heart": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001onlineuser\u0001paidui",
+      "configs": [
+        {
+          "mapping": {
+            "serverid": "#account_id",
+            "servertime": "#time",
+            "modelname": "#event_name",
+            "ip": "#ip",
+            "onlineuser": "onlineuser",
+            "paidui": "paidui"
+          },
+          "fields": {
+            "onlineuser": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "paidui": {
+              "idx": 9999,
+              "type": "int"
+            }
+          }
+        }
+      ]
+    },
+    "M1643093398001_login": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001rolename\u0001ip\u0001valueamount\u0001heronum\u0001heronum1\u0001vip\u0001distinctid\u0001os\u0001osversion\u0001devicetype\u0001devicevendor\u0001resolution\u0001clientinitversion\u0001networktype",
+      "configs": [
+        {
+          "mapping": {
+            "roleid": "#account_id",
+            "deviceid": "#distinct_id",
+            "servertime": "#time",
+            "modelname": "#event_name",
+            "ip": "#ip",
+            "rolelevel":"rolelevel",
+            "valueamount": "valueamount",
+            "heronum": "heronum",
+            "heronum1": "heronum1",
+            "vip": "vip"
+          },
+          "fields": {
+            "rolelevel": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "valueamount": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "heronum": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "heronum1": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "vip": {
+              "idx": 9999,
+              "type": "int"
+            }
+          }
+        }
+      ]
+    },
+    "M1643093398001_rolebuild": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001rolename\u0001gender\u0001ip\u0001distinctid\u0001os\u0001osversion\u0001devicetype\u0001devicevendor\u0001resolution\u0001clientinitversion\u0001networktype\u0001isolduser\u0001usertype\u0001usertypedesc",
+      "configs": [
+        {
+          "mapping": {
+            "roleid": "#account_id",
+            "deviceid": "#distinct_id",
+            "servertime": "#time",
+            "modelname": "#event_name",
+            "ip": "#ip",
+            "rolelevel": "rolelevel",
+            "gender": "gender"
+          },
+          "fields": {
+            "rolelevel": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "gender": {
+              "idx": 9999,
+              "type": "int"
+            }
+          }
+        }
+      ]
+    },
+    "M1643093398001_rolelogin": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001rolename\u0001valueamount\u0001vip\u0001ip\u0001heronum\u0001distinctid\u0001os\u0001osversion\u0001devicetype\u0001devicevendor\u0001resolution\u0001clientinitversion\u0001networktype",
+      "configs": [
+        {
+          "mapping": {
+            "roleid": "#account_id",
+            "deviceid": "#distinct_id",
+            "servertime": "#time",
+            "modelname": "#event_name",
+            "ip": "#ip",
+            "rolelevel": "rolelevel",
+            "vip": "vip",
+            "heronum": "heronum"
+          },
+          "fields": {
+            "rolelevel": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "vip": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "heronum": {
+              "idx": 9999,
+              "type": "int"
+            }
+          }
+        }
+      ]
+    },
+    "M1643093398001_newstages": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001eventid\u0001guidegroupid\u0001vip\u0001rolename\u0001distinctid\u0001isbacktrigger\u0001guidetype\u0001guidelogtype",
+      "configs": [
+        {
+          "mapping": {
+            "roleid": "#account_id",
+            "deviceid": "#distinct_id",
+            "servertime": "#time",
+            "modelname": "#event_name",
+            "ip": "#ip",
+            "rolelevel": "rolelevel",
+            "guidegroupid": "guidegroupid",
+            "vip": "vip"
+          },
+          "fields": {
+            "rolelevel": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "guidegroupid": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "vip": {
+              "idx": 9999,
+              "type": "int"
+            }
+          }
+        }
+      ]
+    },
+    "M1643093398001_levelup": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001rolename\u0001rolelevelaf\u0001rolelevelbf\u0001time\u0001distinctid\u0001vip\u0001leveluponlinetimev2",
+      "configs": [
+        {
+          "mapping": {
+            "roleid": "#account_id",
+            "deviceid": "#distinct_id",
+            "servertime": "#time",
+            "modelname": "#event_name",
+            "ip": "#ip",
+            "rolelevel": "rolelevel",
+            "rolelevelaf": "rolelevelaf",
+            "rolelevelbf": "rolelevelbf",
+            "time": "time",
+            "vip": "vip",
+            "leveluponlinetimev2": "leveluponlinetimev2"
+          },
+          "fields": {
+            "rolelevel": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "rolelevelaf": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "rolelevelbf": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "time": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "vip": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "leveluponlinetimev2": {
+              "idx": 9999,
+              "type": "int"
+            }
+          }
+        }
+      ]
+    },
+    "M1643093398001_pvefight": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001stageid\u0001type\u0001npcid\u0001result\u0001mapid\u0001star\u0001stagetype\u0001time\u0001energy\u0001power\u0001suggestpower\u0001heroid1\u0001heroid2\u0001heroid3\u0001heroid4\u0001heroid5\u0001heroid6\u0001rolename\u0001distinctid\u0001vip\u0001isfirstcombat\u0001battleround\u0001winerremainblood\u0001silvercondition\u0001goldcondition\u0001gamespeed\u0001hero1power\u0001hero2power\u0001hero3power\u0001hero4power\u0001hero5power\u0001hero6power",
+      "configs": [
+        {
+          "merge_map": [
+            {
+              "output_key": "onfield_cards",
+              "origin_keys": [
+                {
+                  "keys": [
+                    {
+                      "name": "heroid1",
+                      "type": "int",
+                      "output_key": "heroid"
+                    },
+                    {
+                      "name": "hero1power",
+                      "type": "int",
+                      "output_key": "hero_power"
+                    }
+                  ],
+                  "position": 1,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "heroid2",
+                      "type": "int",
+                      "output_key": "heroid"
+                    },
+                    {
+                      "name": "hero2power",
+                      "type": "int",
+                      "output_key": "hero_power"
+                    }
+                  ],
+                  "position": 2,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "heroid3",
+                      "type": "int",
+                      "output_key": "heroid"
+                    },
+                    {
+                      "name": "hero3power",
+                      "type": "int",
+                      "output_key": "hero_power"
+                    }
+                  ],
+                  "position": 3,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "heroid4",
+                      "type": "int",
+                      "output_key": "heroid"
+                    },
+                    {
+                      "name": "hero4power",
+                      "type": "int",
+                      "output_key": "hero_power"
+                    }
+                  ],
+                  "position": 4,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "heroid5",
+                      "type": "int",
+                      "output_key": "heroid"
+                    },
+                    {
+                      "name": "hero5power",
+                      "type": "int",
+                      "output_key": "hero_power"
+                    }
+                  ],
+                  "position": 5,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "heroid6",
+                      "type": "int",
+                      "output_key": "heroid"
+                    },
+                    {
+                      "name": "hero6power",
+                      "type": "int",
+                      "output_key": "hero_power"
+                    }
+                  ],
+                  "position": 6,
+                  "position_name": "fight_position_id"
+                }
+              ]
+            }
+          ],
+          "mapping": {
+            "roleid": "#account_id",
+            "servertime": "#time",
+            "modelname": "#event_name",
+            "ip": "#ip",
+            "rolelevel": "rolelevel",
+            "time": "time",
+            "energy": "energy",
+            "power": "power",
+            "suggestpower": "suggestpower",
+            "vip": "vip",
+            "battleround": "battleround",
+            "gamespeed": "gamespeed",
+            "hero1power": "hero1power",
+            "hero2power": "hero2power",
+            "hero3power": "hero3power",
+            "hero4power": "hero4power",
+            "hero5power": "hero5power",
+            "hero6power": "hero6power"
+          },
+          "fields": {
+            "rolelevel": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "time": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "energy": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "power": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "suggestpower": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "vip": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "battleround": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "gamespeed": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero1power": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero2power": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero3power": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero4power": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero5power": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero6power": {
+              "idx": 9999,
+              "type": "int"
+            }
+          }
+        }
+      ]
+    },
+    "M1643093398001_pvpfight": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001power\u0001rankbf\u0001rankaf\u0001battleid\u0001targetroleid\u0001targetname\u0001targetlevel\u0001targetpower\u0001targetrankbf\u0001targetrankaf\u0001result\u0001time\u0001rolename\u0001distinctid\u0001vip\u0001winerremainblood\u0001rank\u0001targetrank\u0001point\u0001targetpoint\u0001hero1\u0001hero2\u0001hero3\u0001hero4\u0001hero5\u0001hero6\u0001heroenemy1\u0001heroenemy2\u0001heroenemy3\u0001heroenemy4\u0001heroenemy5\u0001heroenemy6\u0001isrobot\u0001hero1power\u0001hero2power\u0001hero3power\u0001hero4power\u0001hero5power\u0001hero6power\u0001enemyhero1power\u0001enemyhero2power\u0001enemyhero3power\u0001enemyhero4power\u0001enemyhero5power\u0001enemyhero6power",
+      "configs": [
+        {
+          "merge_map": [
+            {
+              "output_key": "onfield_cards",
+              "origin_keys": [
+                {
+                  "keys": [
+                    {
+                      "name": "hero1",
+                      "type": "int",
+                      "output_key": "heroid"
+                    },
+                    {
+                      "name": "hero1power",
+                      "type": "int",
+                      "output_key": "hero_power"
+                    }
+                  ],
+                  "position": 1,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "hero2",
+                      "type": "int",
+                      "output_key": "heroid"
+                    },
+                    {
+                      "name": "hero2power",
+                      "type": "int",
+                      "output_key": "hero_power"
+                    }
+                  ],
+                  "position": 2,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "hero3",
+                      "type": "int",
+                      "output_key": "heroid"
+                    },
+                    {
+                      "name": "hero3power",
+                      "type": "int",
+                      "output_key": "hero_power"
+                    }
+                  ],
+                  "position": 3,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "hero4",
+                      "type": "int",
+                      "output_key": "heroid"
+                    },
+                    {
+                      "name": "hero4power",
+                      "type": "int",
+                      "output_key": "hero_power"
+                    }
+                  ],
+                  "position": 4,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "hero5",
+                      "type": "int",
+                      "output_key": "heroid"
+                    },
+                    {
+                      "name": "hero5power",
+                      "type": "int",
+                      "output_key": "hero_power"
+                    }
+                  ],
+                  "position": 5,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "hero6",
+                      "type": "int",
+                      "output_key": "heroid"
+                    },
+                    {
+                      "name": "hero6power",
+                      "type": "int",
+                      "output_key": "hero_power"
+                    }
+                  ],
+                  "position": 6,
+                  "position_name": "fight_position_id"
+                }
+              ]
+            },
+            {
+              "output_key": "rival_cards",
+              "origin_keys": [
+                {
+                  "keys": [
+                    {
+                      "name": "heroenemy1",
+                      "type": "int",
+                      "output_key": "heroenemy"
+                    },
+                    {
+                      "name": "enemyhero1power",
+                      "type": "int",
+                      "output_key": "enemyhero_power"
+                    }
+                  ],
+                  "position": 1,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "heroenemy2",
+                      "type": "int",
+                      "output_key": "heroenemy"
+                    },
+                    {
+                      "name": "enemyhero2power",
+                      "type": "int",
+                      "output_key": "enemyhero_power"
+                    }
+                  ],
+                  "position": 2,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "heroenemy3",
+                      "type": "int",
+                      "output_key": "heroenemy"
+                    },
+                    {
+                      "name": "enemyhero3power",
+                      "type": "int",
+                      "output_key": "enemyhero_power"
+                    }
+                  ],
+                  "position": 3,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "heroenemy4",
+                      "type": "int",
+                      "output_key": "heroenemy"
+                    },
+                    {
+                      "name": "enemyhero4power",
+                      "type": "int",
+                      "output_key": "enemyhero_power"
+                    }
+                  ],
+                  "position": 4,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "heroenemy5",
+                      "type": "int",
+                      "output_key": "heroenemy"
+                    },
+                    {
+                      "name": "enemyhero5power",
+                      "type": "int",
+                      "output_key": "enemyhero_power"
+                    }
+                  ],
+                  "position": 5,
+                  "position_name": "fight_position_id"
+                },
+                {
+                  "keys": [
+                    {
+                      "name": "heroenemy6",
+                      "type": "int",
+                      "output_key": "heroenemy"
+                    },
+                    {
+                      "name": "enemyhero6power",
+                      "type": "int",
+                      "output_key": "enemyhero_power"
+                    }
+                  ],
+                  "position": 6,
+                  "position_name": "fight_position_id"
+                }
+              ]
+            }
+          ],
+          "mapping": {
+            "roleid": "#account_id",
+            "deviceid": "#distinct_id",
+            "servertime": "#time",
+            "modelname": "#event_name",
+            "ip": "#ip",
+            "rolelevel": "rolelevel",
+            "power": "power",
+            "rankbf": "rankbf",
+            "rankaf": "rankaf",
+            "targetlevel": "targetlevel",
+            "targetpower": "targetpower",
+            "targetrankbf": "targetrankbf",
+            "targetrankaf": "targetrankaf",
+            "time": "time",
+            "vip": "vip",
+            "rank": "rank",
+            "targetrank": "targetrank",
+            "point": "point",
+            "targetpoint": "targetpoint",
+            "hero1": "hero1",
+            "hero2": "hero2",
+            "hero3": "hero3",
+            "hero4": "hero4",
+            "hero5": "hero5",
+            "hero6": "hero6",
+            "hero1power": "hero1power",
+            "hero2power": "hero2power",
+            "hero3power": "hero3power",
+            "hero4power": "hero4power",
+            "hero5power": "hero5power",
+            "hero6power": "hero6power",
+            "heroenemy1": "heroenemy1",
+            "heroenemy2": "heroenemy2",
+            "heroenemy3": "heroenemy3",
+            "heroenemy4": "heroenemy4",
+            "heroenemy5": "heroenemy5",
+            "heroenemy6": "heroenemy6"
+          },
+          "fields": {
+            "rolelevel": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "power": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "rankbf": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "rankaf": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "targetlevel": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "targetpower": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "targetrankbf": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "targetrankaf": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "time": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "vip": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "rank": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "targetrank": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "point": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "targetpoint": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero1": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero2": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero3": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero4": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero5": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero6": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero1power": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero2power": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero3power": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero4power": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero5power": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "hero6power": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "heroenemy1": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "heroenemy2": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "heroenemy3": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "heroenemy4": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "heroenemy5": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "heroenemy6": {
+              "idx": 9999,
+              "type": "int"
+            }
+          }
+        }
+      ]
+    },
+    "M1643093398001_rtpmatching": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001rtpmatchingtype\u0001rtpmatchingendtime",
+      "configs": [
+        {
+          "mapping": {
+            "roleid": "#account_id",
+            "deviceid": "#distinct_id",
+            "servertime": "#time",
+            "modelname": "#event_name",
+            "ip": "#ip",
+            "rolelevel": "rolelevel",
+            "factionid": "factionid",
+            "rtpmatchingtype": "rtpmatchingtype",
+            "rtpmatchingendtime": "rtpmatchingendtime"
+          },
+          "fields": {
+            "rolelevel": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "factionid": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "rtpmatchingtype": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "rtpmatchingendtime": {
+              "idx": 9999,
+              "type": "int"
+            }
+          }
+        }
+      ]
+    },
+    "M1643093398001_playanddownload": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001networkType\u0001playanddownloadType\u0001playanddownloadProgress\u0001stageId",
+      "configs": [
+        {
+          "mapping": {
+            "roleid": "#account_id",
+            "deviceid": "#distinct_id",
+            "servertime": "#time",
+            "modelname": "#event_name",
+            "ip": "#ip"
+          },
+          "fields": {
+            "rolelevel": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "factionid": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "playanddownloadType": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "playanddownloadProgress": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "stageId": {
+              "idx": 9999,
+              "type": "int"
+            }
+          }
+        }
+      ]
+    },
+    "M1643093398001_logout": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001rolename\u0001valueamount\u0001onlinetimes\u0001vip\u0001energy\u0001heronum\u0001heronum1\u0001vipexp\u0001distinctid\u0001fightingpower\u0001energy1\u0001money\u0001exp\u0001commonid\u0001equipleveltrial1\u0001equipleveltrial2\u0001equipleveltrial3\u0001stunttraining0\u0001stunttraining1\u0001stunttraining2\u0001stunttraining3\u0001arenarank\u0001realtimepvprank\u0001language\u0001isolduser\u0001onlinetimessum\u0001logoutlog",
+      "configs": [
+        {
+          "mapping": {
+            "roleid": "#account_id",
+            "deviceid": "#distinct_id",
+            "servertime": "#time",
+            "modelname": "#event_name",
+            "ip": "#ip",
+            "rolelevel": "rolelevel",
+            "valueamount": "valueamount",
+            "onlinetimes": "onlinetimes",
+            "vip": "vip",
+            "energy": "energy",
+            "heronum": "heronum",
+            "heronum1": "heronum1",
+            "vipexp": "vipexp",
+            "fightingpower": "fightingpower",
+            "energy1": "energy1",
+            "money": "money",
+            "exp": "exp",
+            "equipleveltrial1": "equipleveltrial1",
+            "equipleveltrial2": "equipleveltrial2",
+            "equipleveltrial3": "equipleveltrial3",
+            "stunttraining0": "stunttraining0",
+            "stunttraining1": "stunttraining1",
+            "stunttraining2": "stunttraining2",
+            "stunttraining3": "stunttraining3",
+            "arenarank": "arenarank",
+            "realtimepvprank": "realtimepvprank",
+            "onlinetimessum": "onlinetimessum"
+          },
+          "fields": {
+            "rolelevel": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "valueamount": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "onlinetimes": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "vip": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "energy": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "heronum": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "heronum1": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "vipexp": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "fightingpower": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "energy1": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "money": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "exp": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "equipleveltrial1": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "equipleveltrial2": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "equipleveltrial3": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "stunttraining0": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "stunttraining1": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "stunttraining2": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "stunttraining3": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "arenarank": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "realtimepvprank": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "onlinetimessum": {
+              "idx": 9999,
+              "type": "int"
+            }
+          }
+        }
+      ]
+    },
+    "M1643093398001_erlangattackedcount": {
+      "template": "servertime\u0001appkey\u0001version\u0001modelname\u0001normversion\u0001stepnumid\u0001serverid\u0001gamechannel\u0001userid\u0001roleid\u0001rolelevel\u0001factionid\u0001deviceid\u0001erlangattackid\u0001erlangattackedid",
+      "configs": [
+        {
+          "mapping": {
+            "roleid": "#account_id",
+            "deviceid": "#distinct_id",
+            "servertime": "#time",
+            "modelname": "#event_name",
+            "ip": "#ip",
+            "rolelevel": "rolelevel",
+            "factionid": "factionid",
+            "erlangattackid": "erlangattackid",
+            "erlangattackedid": "erlangattackedid"
+          },
+          "fields": {
+            "rolelevel": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "factionid": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "erlangattackid": {
+              "idx": 9999,
+              "type": "int"
+            },
+            "erlangattackedid": {
+              "idx": 9999,
+              "type": "int"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
